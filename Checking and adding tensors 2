@@ -1,0 +1,5 @@
+adjustment = torch.tensor([[2, 2, 2], [2, 2, 2]])
+
+# Add the temperatures and adjustment tensors
+corrected_temperatures = temperatures + adjustment
+print("Corrected temperatures:", corrected_temperatures)
