@@ -1,0 +1,8 @@
+weight0 = model[0].weight
+weight1 = model[1].weight
+weight2 = model[2].weight
+
+# Access the gradients of the weight of each linear layer
+grads0 = weight0.grad
+grads1 = weight1.grad
+grads2 = weight2.grad
