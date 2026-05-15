@@ -1,0 +1,2 @@
+# Create a ReLU function with PyTorch
+relu_pytorch = nn.ReLU()
