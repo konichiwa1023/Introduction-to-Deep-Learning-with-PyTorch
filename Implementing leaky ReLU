@@ -1,0 +1,7 @@
+# Create a leaky relu function in PyTorch
+leaky_relu_pytorch = torch.nn.LeakyReLU(negative_slope=0.05)
+
+x = torch.tensor(-2.0)
+# Call the above function on the tensor x
+output = leaky_relu_pytorch(x)
+print(output)
