@@ -1,0 +1,3 @@
+# Try a third learning rate value
+lr2 = 0.09
+optimize_and_plot(lr=lr2)
