@@ -1,0 +1,3 @@
+# Try a second value for momentum
+mom1 = 0.95
+optimize_and_plot(momentum=mom1)
