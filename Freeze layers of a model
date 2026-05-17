@@ -1,0 +1,11 @@
+for name, param in model.named_parameters():
+  
+    # Check for first layer's weight
+    if name == '0.weight':
+        # Freeze this weight
+        param.requires_grad = False
+        
+    # Check for second layer's weight
+    if name == '1.weight':
+        # Freeze this weight
+        param.requires_grad = False
