@@ -1,0 +1,18 @@
+# Set the model to evaluation mode
+model.eval()
+validation_loss = 0.0
+
+with torch.no_grad():
+  for features, labels in validationloader:
+      outputs = model(features)
+      loss = criterion(outputs, labels)
+      
+      # Sum the current loss to the validation_loss variable
+      validation_loss += loss.item()
+      
+# Calculate the mean loss value
+validation_loss_epoch = validation_loss / len(validationloader)
+print(validation_loss_epoch)
+
+# Set the model back to training mode
+model.train()
