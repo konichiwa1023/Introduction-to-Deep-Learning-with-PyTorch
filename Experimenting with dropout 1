@@ -1,0 +1,10 @@
+# Model with Dropout
+model = nn.Sequential(
+    nn.Linear(8, 6),
+    nn.Linear(6, 4),
+    nn.Dropout(p=0.5)
+)
+
+# Forward pass in training mode (Dropout active)
+model.train()
+output_train = model(features)
