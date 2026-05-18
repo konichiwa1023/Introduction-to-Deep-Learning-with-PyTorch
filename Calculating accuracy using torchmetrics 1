@@ -1,0 +1,8 @@
+# Create accuracy metric
+metric = torchmetrics.Accuracy(task="multiclass", num_classes=3)
+
+for features, labels in dataloader:
+    outputs = model(features)
+    
+    # Calculate accuracy over the batch
+    metric.update(outputs, labels.argmax(dim=-1))
